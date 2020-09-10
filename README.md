@@ -9,3 +9,6 @@ snake game using pygame in python
 
 # Berline Wall
 <p align="center"><img src="https://user-images.githubusercontent.com/57006850/92825654-0b3f9c80-f3e5-11ea-8855-6a4bed0f2140.gif"/></img></p>
+
+# Tron
+<p align="center"><img src="https://user-images.githubusercontent.com/57006850/92826281-c36d4500-f3e5-11ea-8f52-e6c7bccc27ca.gif"/></img></p>
