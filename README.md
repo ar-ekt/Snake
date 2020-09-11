@@ -6,6 +6,7 @@ The player must manage the snake with the arrow keys to eat the coins inside the
 <p align="center"><img src="https://user-images.githubusercontent.com/57006850/92823654-c9155b80-f3e2-11ea-9d86-cb619f7baae6.gif"/></img></p>
 
 # In Time
+Players must manage their snake with the arrow keys to eat the coins inside the screen. For each coin eaten, a cell is added to the end of the snake and the player's score increases. The game is played in 2 minutes and at the end of this time, the player who has more points wins. Until the points are equal, the time increases by 30 seconds to determine the winner.
 <p align="center"><img src="https://user-images.githubusercontent.com/57006850/92824551-ce26da80-f3e3-11ea-9800-db90e254fa29.gif"/></img></p>
 
 # Berline Wall
