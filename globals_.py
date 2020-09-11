@@ -13,7 +13,7 @@ def init():
     global bests_file_name, image_file_name
     
     pygame.init()
-    screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
+    screen = pygame.display.set_mode((1920, 1080), pygame.FULLSCREEN | pygame.HWSURFACE | pygame.DOUBLEBUF)
     pygame.display.set_caption("Snake")
     pygame.mouse.set_visible(0)
     
