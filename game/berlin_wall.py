@@ -119,7 +119,10 @@ def berlin_wall():
                 if motions[index] != "stop" or len(snakes[index]) == 1:
                     move_snake(snakes[index], motions[index], True, screen_size)
             
-            if snakes[0][0] == coins[0]:
+            if snakes[0][0] == coins[0] and snakes[1][0] == coins[1]:
+                coins = eat_coin(snakes[0], motions[0], die_in_wall, screen_size, wall_movement, snakes[1], True, motions[1], True)
+            
+            elif snakes[0][0] == coins[0]:
                 wall_movement += 1
                 coins = eat_coin(snakes[0], motions[0], die_in_wall, screen_size, wall_movement, snakes[1], True)
             
