@@ -1,6 +1,8 @@
 # Snake
 snake game using pygame in python
 
+To play, open the main.py file with python and run it
+
 # Classic
 The player must manage the snake with the arrow keys to eat the coins inside the screen. For each coin eaten, a cell is added to the end of the snake and its score increases. The game continues until the snake hits its body.
 <p align="center"><img src="https://user-images.githubusercontent.com/57006850/92823654-c9155b80-f3e2-11ea-9d86-cb619f7baae6.gif"/></img></p>
