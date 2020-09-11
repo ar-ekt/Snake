@@ -115,14 +115,20 @@ def in_time():
             # shift the snake's body and give direction to its head
             move_snake(snakes[index], motions[index], die_in_wall, screen_size)
         
-            # eat coin, append new cell to end of snake and define a new coin
-            if snakes[index][0] == coin:
-                coin = eat_coin(snakes[index], motions[index], die_in_wall, screen_size, snake2 = snakes[1-index])
-        
             # the snake's head hits its body -> the snake get smaller
             if snakes[index][0] in snakes[index][1:]:
                 snakes[index] = snakes[index][:snakes[index][1:].index(snakes[index][0])+1]
-           
+        
+        # eat coin, append new cell to end of snake and define a new coin
+        if snakes[0][0] == coin and snakes[1][0] == coin:
+            coin = eat_coin(snakes[0], motions[0], die_in_wall, screen_size, snake2 = snakes[1], motion2 = motions[1], both_add = True)
+            
+        elif snakes[0][0] == coin:
+            coin = eat_coin(snakes[0], motions[0], die_in_wall, screen_size, snake2 = snakes[1])
+        
+        elif snakes[1][0] == coin:
+           coin = eat_coin(snakes[1], motions[1], die_in_wall, screen_size, snake2 = snakes[0])
+        
         time1 = show(snakes, coin, names, color_p, cell_size, game_time, time1)
         if not time1[0]:
             return 0
