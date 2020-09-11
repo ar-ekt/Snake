@@ -168,8 +168,10 @@ def new_coin(range_x, range_y, snakes):
         if all([(coin_x,coin_y) not in snake for snake in snakes]):
             return (coin_x, coin_y)
 
-def eat_coin(snake, motion, die_in_wall, screen_size, wall_movement = 0, snake2 = [], two_coins = False):
+def eat_coin(snake, motion, die_in_wall, screen_size, wall_movement = 0, snake2 = [], two_coins = False, motion2 = "", both_add = False):
     add_snake_end(snake, motion, die_in_wall, screen_size)
+    if both_add:
+        add_snake_end(snake2, motion2, die_in_wall, screen_size)
     
     if not two_coins:
         coin = new_coin((0,screen_size[0]), (0,screen_size[1]), [snake, snake2])
