@@ -3,11 +3,11 @@ from game.functions.two_player import *
 def is_round_over(snakes, wall_movement, screen_size):
     snakes_win = [False, False]
     
-    snakes_win[1] |= snakes[0][0][0] in [-1, screen_size[0]+wall_movement]
+    snakes_win[1] |= any([cell[0] in [-1, screen_size[0]+wall_movement] for cell in snakes[0]])
     snakes_win[1] |= snakes[0][0][1] in [-1, screen_size[1]]
     snakes_win[1] |= snakes[0][0] in snakes[0][1:]
     
-    snakes_win[0] |= snakes[1][0][0] in [-1+wall_movement, screen_size[0]]
+    snakes_win[0] |= any([cell[0] in [-1+wall_movement, screen_size[0]] for cell in snakes[1]])
     snakes_win[0] |= snakes[1][0][1] in [-1, screen_size[1]]
     snakes_win[0] |= snakes[1][0] in snakes[1][1:]
     
