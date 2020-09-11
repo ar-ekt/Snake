@@ -9,11 +9,6 @@ def show_time(game_time):
     text(time_str, 40, "color1", (900, 15))
 
 def show(snakes, coin, names, color_p, cell_size, game_time, time1):
-    alphasize = {'a': 16, 'b': 20, 'c': 16, 'd': 17, 'e': 19, 'f': 13, 'g': 17, 'h': 18, 'i': 9,
-             'j': 8,'k': 18, 'l': 10, 'm': 25, 'n': 18, 'o': 18, 'p': 18, 'q': 17, 'r': 14,
-             's': 15, 't': 10,'u': 20, 'v': 21, 'w': 21, 'x': 18, 'y': 21, 'z': 17, '0': 16,
-             '1': 12, '2': 18, '3': 17, '4': 15, '5': 17, '6': 15, '7': 15, '8': 15, '9': 17}
-    
     scr()
         
     for index in range(2):
