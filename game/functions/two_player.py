@@ -4,7 +4,13 @@ arrow_keys = {pygame.K_w: ["up", 0], pygame.K_UP: ["up", 1],
               pygame.K_s: ["down", 0], pygame.K_DOWN: ["down", 1],
               pygame.K_d: ["right", 0], pygame.K_RIGHT: ["right", 1],
               pygame.K_a: ["left", 0], pygame.K_LEFT: ["left", 1]}
+
 directs = {"up": "down", "down": "up", "right": "left", "left": "right"}
+
+alphasize = {'a': 16, 'b': 20, 'c': 16, 'd': 17, 'e': 19, 'f': 13, 'g': 17, 'h': 18, 'i': 9,
+             'j': 8,'k': 18, 'l': 10, 'm': 25, 'n': 18, 'o': 18, 'p': 18, 'q': 17, 'r': 14,
+             's': 15, 't': 10,'u': 20, 'v': 21, 'w': 21, 'x': 18, 'y': 21, 'z': 17, '0': 16,
+             '1': 12, '2': 18, '3': 17, '4': 15, '5': 17, '6': 15, '7': 15, '8': 15, '9': 17}
 
 def input_name(which, color_p):
     name = ""
