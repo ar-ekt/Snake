@@ -1,11 +1,11 @@
 from globals_ import *
-
+import pygame
 #---------------------------Games---------------------
 from game.classic import classic
 from game.in_time import in_time
 from game.berlin_wall import berlin_wall
 from game.tron import tron
-
+pygame.init()
 #---------------------------Best----------------------
 def read_bests(which): # read file and store best scores in a list
     bests = open(bests_file_name)
@@ -284,6 +284,8 @@ def select_game():
                     return 0
                 
                 elif evento.key == pygame.K_KP_ENTER or evento.key == pygame.K_RETURN:
+                    pygame.mixer.usic.load('nagin.mp3')
+                    pygame.mixer.music.play()
                     games[select][0]()
                 
                 elif evento.key == pygame.K_DOWN:
@@ -296,6 +298,7 @@ def select_game():
                     return 0
 
 def menu():
+    
     mode = 0
     while True:
         scr()
